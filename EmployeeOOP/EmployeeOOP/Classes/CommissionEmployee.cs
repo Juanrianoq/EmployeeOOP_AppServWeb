@@ -20,7 +20,7 @@ namespace EmployeeOOP.Classes
 
             public override decimal GetValueToPay()
             {
-                  return Convert.ToDecimal(Sales * CommisionPercentaje);
+                  return Convert.ToDecimal(Sales + (Sales * CommisionPercentaje));
             }
             public override string ToString()
             {
