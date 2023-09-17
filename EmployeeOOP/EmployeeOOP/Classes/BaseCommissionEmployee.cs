@@ -1,12 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EmployeeOOP.Classes
+﻿namespace EmployeeOOP.Classes
 {
-      internal class BaseCommissionEmployee
+      public class BaseCommissionEmployee : CommissionEmployee
       {
+            #region "Properties"
+
+            public decimal Base { get; set; }
+
+            #endregion
+
+            #region "Methods"
+
+            public override decimal GetValueToPay()
+            {
+                  return Base * base.GetValueToPay();
+            }
+
+            public override string ToString()
+            {
+                  return $"{base.ToString()}" +
+                        $"Salario con comisión devengado: {GetValueToPay:C2} \n\t";
+            }
+
+            #endregion
       }
 }

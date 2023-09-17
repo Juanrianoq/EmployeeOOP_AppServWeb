@@ -20,12 +20,12 @@ namespace EmployeeOOP.Classes
 
             public override decimal GetValueToPay()
             {
-                  return Convert.ToDecimal(Sales + (Sales * CommisionPercentaje));
+                  return Convert.ToDecimal(Sales * CommisionPercentaje);
             }
             public override string ToString()
             {
                   return $"{base.ToString()}" +
-                        $"Comision por ventas: {GetValueToPay:C2} \n\t";
+                        $"Comision devengada: {GetValueToPay:C2} \n\t";
             }
 
             #endregion

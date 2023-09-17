@@ -23,6 +23,7 @@ try
       Console.WriteLine("\n");
       Console.WriteLine(objDate.ToString());
 
+      // Asignación de valores a las variables.
       Console.Write("Ingresar nombre completo: ");
       firstName = Console.ReadLine();
 
