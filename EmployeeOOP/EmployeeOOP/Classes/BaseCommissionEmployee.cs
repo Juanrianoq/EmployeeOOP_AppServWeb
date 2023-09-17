@@ -14,11 +14,10 @@
             {
                   return Base * base.GetValueToPay();
             }
-
             public override string ToString()
             {
                   return $"{base.ToString()}" +
-                        $"Salario con comisión devengado: {GetValueToPay:C2} \n\t";
+                        $"Salario con comisión devengado: {GetValueToPay():C2} \n\t";
             }
 
             #endregion

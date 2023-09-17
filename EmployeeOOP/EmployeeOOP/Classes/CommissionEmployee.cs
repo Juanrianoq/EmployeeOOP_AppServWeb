@@ -25,7 +25,7 @@ namespace EmployeeOOP.Classes
             public override string ToString()
             {
                   return $"{base.ToString()}" +
-                        $"Comision devengada: {GetValueToPay:C2} \n\t";
+                        $"Comision devengada: {GetValueToPay():C2} \n\t";
             }
 
             #endregion
